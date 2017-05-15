@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>code management</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<script src="js/jquery.js"></script>
+<script src="js/seedrandom.js"></script>
+<!--<link rel="stylesheet" href="js/style.css">-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style_ok.css" rel="stylesheet">
+
+<style>
+/*#randomTable {*/
+/*    font-family: monospace;*/
+/*    font-size: 2.0em;*/
+/*}*/
+</style>
+</head>
+<body id="mybg">
+
+  
+
+	
+	<div class="jumbotron">
+        <!--<div class="container">-->
+            <h1>密碼產生亂數表</h1>
+            <p>step:1 選擇完密碼種類&nbsp;&nbsp;step:2請在輸入數字後按下藍色按鈕</p>
+      <form class="navbar-form navbar-left" role="search">      
+        <div class="selectType" >    
+                 
+       <div id="selectType" class="panel panel-info">
+         <div class="panel-heading">
+	       		<input type="radio" name="coo" value="1" data-select="1" checked > 
+	       		<h3 class="panel-title">數字構成</h3>
+				<input type="radio" name="coo" value="2" data-select="2" style="left:100px;" >
+				<h3 class="panel-title">英文和數字構成</h3>
+				  </form>
+			</div>
+		</div>
+		
+		</div>
+        </li>
+        </div>
+    
+            <!--style="float:left;-->
+                
+             <div class="navbar-form " >
+                    <input type="text" id="txtSeed" class="form" placeholder="1234">
+                    </div>
+             
+        
+        <!--<li class="dropdown">-->
+        <!--  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>-->
+        <!--  <ul class="dropdown-menu">-->
+        <!--    <li><a href="#">Action</a></li>-->
+        <!--    <li><a href="#">Another action</a></li>-->
+        <!--    <li><a href="#">Something else here</a></li>-->
+        <!--    <li class="divider"></li>-->
+        <!--    <li><a href="#">Separated link</a></li>-->
+        <!--    <li class="divider"></li>-->
+        <!--    <li><a href="#">One more separated link</a></li>-->
+        <!--  </ul>-->
+        <!--</li>-->
+        
+  
+      
+      </ul>
+   
+        
+      
+            <p><a class="btn btn-primary btn-lg" role="button" id="btnGo"   >產生亂數表</a></p>
+            
+			<!--&nbsp;<input type="button" id="btnGo" value="產生亂數表" />-->
+        </div>
+    </div>
+    </div>
+      <!--<li class="dropdown">-->
+      <!--    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>-->
+      <!--    <ul class="dropdown-menu">-->
+      <!--      <li><a href="#">Action</a></li>-->
+      <!--      <li><a href="#">Another action</a></li>-->
+      <!--      <li><a href="#">Something else here</a></li>-->
+      <!--      <li class="divider"></li>-->
+      <!--      <li><a href="#">Separated link</a></li>-->
+      <!--      <li class="divider"></li>-->
+      <!--      <li><a href="#">One more separated link</a></li>-->
+      <!--    </ul>-->
+        </li>
+    
+	    </div>
+	    
+	    
+                    <div class="col-sm-6">
+<div class="panel panel-info" id="css2" hidden>
+  <div class="panel-heading">
+    <h3 class="panel-title">step3: 點擊您喜歡的密碼</h3>
+  </div>
+  <div class="panel-body">
+     <ul class="list-group list-group">
+      <li class="list-group-item" id="A1"></li>
+        <li class="list-group-item" id="A2"></li>
+        <li class="list-group-item" id="A3"></li>
+        <li class="list-group-item"id="A4"></li>
+        <li class="list-group-item"id="A5"></li>
+        <li class="list-group-item"id="A6"></li>
+        <li class="list-group-item"id="A7"></li>
+        <li class="list-group-item"id="A8"></li>
+        <li class="list-group-item"id="A9"></li>
+        <li class="list-group-item"id="A10"></li>
+    </ul>
+  
+                    </div>
+                      </div>
+ 
+</div>
+
+            <div class="col-sm-6">
+
+                <div class="panel panel-danger" id="css3" hidden >
+                    <div class="panel-heading">
+                        <h3 class="panel-title">下列是您的密碼</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <ul class="list-group list-group" >
+                            <li class="list-group-item" id="b1"></li>
+                            
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+   <div class="col-sm-12">
+    <div class="container">
+        <div class="bs-callout bs-callout-danger">
+              <h4 >使用說明</h4>
+   
+     <li class="list-group-bs" >此亂數號碼會依輸入號碼亂數產生密碼</li>
+     <li class="list-group-bs" >輸入相同數字會產生相同的密碼</li>
+     <li class="list-group-bs" >現在您可以按照step1->step2->step3-> 得到您得密碼</li>
+      
+          
+	</div>	    
+            <!--<h4 id="randomTable">Cross-browser compatibility</h4>-->
+    <!--        <p>Avoid using <code>&lt;select&gt;</code> elements here as they cannot be fully styled in WebKit browsers.</p>-->
+    <!--    </div>-->
+    <!--  </div>  -->
+    <!--</div>-->
+    <!--</div>-->
+</body>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script>
+
+
+// var e = document.getElementById("ddlViewBy");
+// var strUser = e.options[e.selectedIndex].value;
+
+
+	$("#btnGo").click(function () {
+	$("#css2").show();
+	$("#css3").show();
+	//li[name='coo']
+var choose = $("input[name='coo']:checked").data("select");
+		var sPool;
+		switch (choose) {
+			case 1:
+				sPool = "0123456789";
+				break;
+			case 2:
+				sPool = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz0123456789";
+				break;	
+		}
+
+		// alert(choose);
+		
+		var result;
+		var num=[];
+		$("#randomTable").html("");
+    Math.seedrandom($("#txtSeed").val()); // 設定亂數種子
+	var iRandom = 0; var ch = "?";
+	for (iRow = 1; iRow<=10; iRow++) {
+		var sLine = (iRow + 100).toString().substr(1, 2) + ": ";
+		for (iCol = 1; iCol <=10; iCol++) {
+			iRandom = Math.floor(Math.random() * sPool.length);
+			ch = sPool.substr(iRandom, 1);
+			sLine += ch;
+			
+		}
+	   result += sLine + "<br>";
+	//	$("#randomTable2").text(result);
+	    num.push(sLine);                 //這邊就是資料取出
+	   // alert(num[num.length-1]);
+// 	 ("").css("visiblity","hidden");
+	   for (var k= 0;   k<10;  k++) {
+	   	$("#A"+(k+1)).hide().html(num[k]).fadeIn(1000);          //新增
+	   }
+	    //$("#A6").text(num[1]);
+	}
+//	$("A6").text(num[1]);
+//	$("#randomTable").hide().html(result).fadeIn(1000);
+//	$("#randomTable2").text("123");
+
+});
+	for (var k= 0;   k<10;  k++) {
+	   $("#A"+(k+1)).dblclick(function(){
+          $("#b1").html(this);     
+	   });
+ }
+
+ 
+</script>
+ 
+</body>
+</html>
